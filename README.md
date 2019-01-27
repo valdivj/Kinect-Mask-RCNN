@@ -9,7 +9,7 @@ record my Kinect depth & Video stream and run it on my PaperSpace machine.
 And the depth stream as a Pickle file named "Kinect_Depth".
 
 2. Kinect Mask RCNN.py : Make sure you have the paths set to where the video and depth stream were stored.
-When you rub the program it  takes the recorded kinect depth and video stream and runs it through the Mask-RCNN model
+When you run the program it  takes the recorded kinect depth and video stream and runs it through the Mask-RCNN model
 It finds the objects and puts bounding boxes,labels and masks on images. It also takes the center of the bounding boxes and uses that info to find the location of the object on the depth stream and extracts the depth reading and displays it on the bottom
 right area of the bounding boxes.
 
