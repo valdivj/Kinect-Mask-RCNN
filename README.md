@@ -1,6 +1,6 @@
 # Kinect Mask RCNN
 
-Fist of all I would recomend Looking at this repository:https://github.com/matterport/Mask_RCNN.
+First of all I would recomend Looking at this repository:https://github.com/matterport/Mask_RCNN.
 This will help you setup the MASK RCNN model on your computer.
 My computer is not powerful enough to run the MASK RCNN model so I needed a way to
 record my Kinect depth & Video stream and run it on my PaperSpace machine.
