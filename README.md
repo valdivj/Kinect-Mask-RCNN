@@ -18,7 +18,7 @@ As the model is processing the Kinect depth and video stream it is also saving t
 
 3. Kinect Player.py: this plays back "Kinect_ColorD.mp4" and "Kinect_ColorR.mp4" at the same time at a regular frame rate so you can view the results of the model.
 
-![Image description](https://github.com/valdivj/KinectV2_YOLO/blob/master/Kinect%Mask.jpg)
+![Image description](https://github.com/valdivj/Kinect-Mask-RCNN/blob/master/Kinect%20Mask.jpg)
 
 
 
