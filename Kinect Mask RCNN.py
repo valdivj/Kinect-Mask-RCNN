@@ -97,10 +97,10 @@ def display_instances(image, boxes, masks, ids, names, scores,frame_idx):
         score = scores[i] if scores is not None else None
         caption = '{} {:.2f}'.format(label, score) if score else label
         mask = masks[:, :, i]
-        x_Center = (x1 + x2) / 2
-        y_Center = (y1 + y2) / 2
-        Pixel = depthxy[int(y_Center * .35)]
-        Pixel_Depth = Pixel[int(x_Center / 4)]
+        x_Center = ((x1 + x2) / 2) * 1.3
+        y_Center = ((y1 + y2) / 2) * 1.3
+        Pixel = depthxy[int(y_Center * .28)]
+        Pixel_Depth = Pixel[int(x_Center / 3.5) - 100]
         textD = 'Depth {}mm'.format(Pixel_Depth)
 
         image = apply_mask(image, mask, color)
@@ -139,10 +139,9 @@ def display_instancesD(imageD, boxes,frame_idx):
 
 
         y1, x1, y2, x2 = boxes[i]
-        x_Center = (x1 + x2) / 2
-        y_Center = (y1 + y2) / 2
-        Center = (int(x_Center / 4), int(y_Center * .35))
-
+        x_Center = ((x1 + x2) / 2) * 1.3
+        y_Center = ((y1 + y2) / 2) * 1.3
+        Center = int(x_Center / 3.5) - 100, int(y_Center * .28)
         imageD = cv2.circle(frameD, Center, 10, color, -1)
 
     return imageD
